@@ -1,0 +1,348 @@
+/*--------- Import Font ---------*/
+@font-face{
+    font-family: 'Gotham';
+    src: url('../font/Gotham-Light.woff');
+}
+@font-face{
+    font-family: 'Bahnschrift';
+    src: url('../font/Bahnschrift.woff');
+}
+
+/* ------------ RESET  ----------- */
+
+*{margin: 0; padding: 0;box-sizing:border-box; font-family: 'Bahnschrift';}
+.container{ width: 80%; margin: 0 auto;}
+.form-group{ margin: 3% 0;}
+ul{list-style: none;}
+a{text-decoration: none; cursor: pointer; opacity: 0.9;}
+a:hover{opacity: 1;}
+.espaco{ width: 100%; float: left; display: none;}
+
+/* buttom */
+ button{opacity: 0.9;}
+ button:hover{opacity: 1;}
+.btn{width: 50px; height:50px; padding: 3% 10%; cursor: pointer;}
+
+/* colors */
+.golden{color:#ab9765;}
+.white{color:#fff;}
+.blue-dark{color:#002146;}
+.bg-grey{background-color: #efefef;}
+
+/* Background */
+.bg-white{background-color: #fff;}
+.bg-golden{background-color: #ab9765;}
+.bg-blue-light{ background-color: #0493d7;}
+.bg-blue-dark{background-color:#002146;}
+
+/* card */
+.card{ width:100%; float: left; padding:2%; text-transform: uppercase;}
+.card-mat-principais{padding: 2%; float: left; width: 100%;}
+.card-mat-complemetares{padding: 2%; float: left; width: 100%;}
+
+/* Marcador texto */
+mark {padding: 2%;}
+
+
+
+
+/* ----------- Header ------------ */
+.header{
+    width: 100%;
+    float: left;
+    padding: 1% 4%;
+}
+.header .logo{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.header .logo img{
+    width: 150px;
+}
+/* ----------- Banner ------------ */
+ .banner{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.banner img{
+    width: 100%;
+}
+/* ---------- Selo Aras ---------- */
+.selo-aras{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+.selo-aras p{
+    margin-bottom: 3%;
+}
+.selo-aras .card p{
+    font-size: 30px;
+    font-family: 'Gotham';
+}
+.selo-aras .img-selo{
+    width: 100%;
+    float: left;
+}
+.selo-aras img{
+    width: 150px;
+}
+/* ------------ Article ------------ */
+.article{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+.article p{
+    margin: 4% auto;
+}
+/* ----------- Conograma ----------- */
+.conograma{
+    width: 100%;
+    float: left;
+    background-image: url(../img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3% 4%;
+}
+.conograma .item{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 3% auto;
+    padding: 3% 4%;
+}
+.conograma .item img{
+    width: 200px;
+}
+.botao {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* --- Disciplina e corpo docente --- */
+.disc-corpo-docente {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    background-image: url(../img/bg3-small.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.disc-corpo-docente .titulo{
+    margin: 3%;
+}
+.disc-corpo-docente .materias-docente{
+    width: 100%;
+    float: left;
+    padding: 3%;
+}
+.disc-corpo-docente .materias-docente ul{
+    width: 100%;
+    float: left;
+}
+.disc-corpo-docente .materias-docente ul li{
+    width: 50%;
+    float: left;
+}
+.disc-corpo-docente .materias-docente ul li img{
+    max-width: 100%;
+}
+.disc-corpo-docente .materias-docente p{
+    margin: 10% 0;
+}
+.disc-corpo-docente .materias-docente .card-mark{
+    width:100%; 
+    float: left; 
+    padding:2%; 
+    text-transform: uppercase;
+    margin: 5% 0;
+}
+/* ----------- Newsletter ----------- */
+.newsletter{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+.newsletter form{
+    width: 100%;
+}
+.newsletter form input{
+    width: 100%;
+    float: left;
+    border: 0;
+    padding: 3% 4%;
+}
+.newsletter button{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    cursor: pointer;
+}
+.newsletter button i{
+    position: relative;
+   left: 5%;
+}
+/* --------------- Footer -------------- */
+.footer{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+}
+.footer .footer-logo{
+    width: 100%;
+    float: left;
+}
+.footer .footer-logo img{
+    width: 150px;
+}
+.footer-copy{
+    width: 100%;
+    float: left;
+}
+.footer-copy p{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.footer-copy .footer-copy-logo{
+    width: 50%;
+    float: left;
+}
+.footer-copy .footer-copy-logo img{
+    width:150px ;
+}
+
+/* --------- Media Queries --------- */
+@media screen and (min-width:480px){
+    .conograma .item p{
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:640px){
+    .selo-aras p{
+        margin-bottom: 0;
+    }
+    /* .disc-corpo-docente .materias-docente ul li {
+        margin-left: 10%;
+        margin-right: -25%;
+    } */
+}
+@media screen and (min-width: 780px){
+    .header .logo{
+        width: 50%;
+        text-align: left;
+    }
+    .conograma .item{
+        width: 50%;
+        height: 150px;
+    }
+    .conograma .item p{
+        width: 70%;
+    }
+    .disc-corpo-docente {
+        background-image: url(../img/bg3-medium.png);
+        background-size: cover;
+    }
+    .disc-corpo-docente .materias-docente{
+        width: 50%;
+    }
+    .newsletter form input{
+        width: 47%;
+        margin-left: 2%;
+    }
+    .newsletter form input {
+        padding: 2%;
+    }
+    .footer{
+        padding: 0;
+    }
+    .footer .footer-logo {
+        width: 30%;
+        padding: 0;
+    }
+    .footer-copy {
+        padding: 0;
+        width: 70%;
+    }
+    .footer-copy p {
+        text-align: justify;
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width: 960px){
+    .container {
+        width: 90%;
+    }
+    .card{ 
+        width: 65%;
+        float: left;
+        position: relative;
+        left: 15%;
+    }
+    .selo-aras .card p {
+        font-size: 25px;
+    }
+    .selo-aras .img-selo{
+        width: 20%;
+        float: right;
+        margin-top: -3%;
+    }
+    .disc-corpo-docente {
+        background-image: url(../img/bg3-large.png);
+        padding: 0;
+        overflow: hidden;
+    }
+    .disc-corpo-docente .materias-docente{
+        width: 25%;
+    }
+    .disc-corpo-docente .center{
+        width: 100%;
+        position: relative;
+        right: 12%;
+    }
+    .disc-corpo-docente .right{
+        width: 100%;
+        position: relative;
+        left: 22%;
+    }
+    .newsletter button{
+        width: 50%;
+    }
+    .card-mat-principais{ 
+        width: 30%;
+        font-size: 25px;
+    }
+    .card-mat-complemetares{
+        float: right; 
+        width: 30%;
+        font-size: 25px;
+    }
+    .espaco{
+        display: block;
+    }
+}
+@media screen and (min-width:1024px){
+    .container {
+        width: 70%;
+        margin: 0 15%;
+    }
+    .btn{
+        padding: 1% 3%;
+    }
+    .conograma .item{
+        width: 33%;
+    }
+    .conograma .item:last-child{
+        width: 100%;
+    }
+}
